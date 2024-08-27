@@ -1,5 +1,5 @@
 import React from "react";
-import Card  from "./card.jsx";
+import Card from "./card.jsx";
 import Jumbotrone from "./jumbotrone.jsx"
 import Navbar from "./navbar.jsx"
 import Footer from "./footer.jsx"
@@ -10,22 +10,46 @@ import Footer from "./footer.jsx"
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<div classname= "w-75 p-3">
-				<div classname= "w-75 p-3">
-			<Navbar/>
+		<>
+			<div classname="w-75 p-3">
+				<Navbar />
 			</div>
-			<Jumbotrone/>
-			<Card/>
+
+			<div className="w-80 p-3">
+				<Jumbotrone />
+			</div>
+
+			<div className="container text-center">
+				<div className="row">
+					<div className="col col-3">
+						<Card/>
+					</div>
+					<div className="col col-3">
+					<Card/>					</div>
+					<div className="col col-3">
+					<Card/> 
 			
-			
-			
-			
-			<Footer/>
+					</div>
+					<div className="col col-3  mb-3">
+					<Card/>
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div className="">
+
+			<Footer />
 
 			</div>
-			
-		</div>
+
+
+
+		</>
 	);
 };
 
